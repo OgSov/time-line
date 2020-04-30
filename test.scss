@@ -1,0 +1,36 @@
+$text-color: #F2F2F2;
+$color: black;
+$size: 1em;
+
+body{
+    background-color: lighten($color,60%);
+    color: $text-color;
+}
+.text-center{
+    text-align: center;
+    line-height: 1.5 * $size;
+    font-size: 2 * $size;
+}
+.timeline>ol::before{
+    background-color: lighten($color,20%);
+}
+.timeline>ol>li>h3{
+    background-color: lighten($color,20%);
+}
+.timeline>ol>li>ol>li{
+    background-color: lighten($color,52%);
+}
+.timeline>ol>li>ol>li>h4::before{
+    background-color: lighten($color,20%);
+    border: 2px solid lighten($color,60%);
+}
+.timeline>ol>li>ol>li:nth-child(even)>h4::before{
+    background-color: lighten($color,20%);
+    border: 2px solid lighten($color,60%);
+}
+.timeline>ol>li>ol>li>h4::after{
+    border: 0.5em solid lighten($color,52%);
+}
+.timeline>ol>li>ol>li:nth-child(even)>h4::after{
+    border: 0.5em solid lighten($color,52%);
+}

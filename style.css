@@ -1,0 +1,98 @@
+body{
+    /* background-color: #70778C; */
+    font-family: Poppins;
+    /* color: #F2F2F2; */
+}
+.timeline{
+    width: 80vw;
+    margin: auto;
+}
+/* .text-center{
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 2em;
+} */
+.timeline>ol{
+    position: relative;
+}
+.timeline>ol::before{
+    content: "";
+    /* background-color: #010626; */
+    position: absolute;
+    left: calc( 50% - 3px / 2 );
+    top: 5%;
+    width: 3px;
+    height: 100%;
+    z-index: -1;
+}
+.timeline>ol>li{
+    text-align: center;
+}
+.timeline>ol>li>h3{
+    /* background-color: #010626; */
+    display: inline-block;
+    padding: 1em;
+
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+    border-radius: 0.3em;
+}
+.timeline>ol>li>ol>li{
+    /* background-color: #465173; */
+    width: 45%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    position: relative;
+}
+.timeline>ol>li>ol>li>h4::before{
+    content: "";
+    position: absolute;
+    /* background-color: #010626; */
+    width: 0.75em;
+    height: 0.75em;
+    right: calc( 40% - 50% + 7px / 2 ); /* :D */ 
+    border-radius: 100%;
+    /* border: 2px solid #70778C; */
+}
+.timeline>ol>li>ol>li:nth-child(even)>h4::before{
+    content: "";
+    position: absolute;
+    /* background-color: #010626; */
+    width: 0.75em;
+    height: 0.75em;
+    left: calc( 40% - 50% + 7px / 2 ); 
+    border-radius: 100%;
+    /* border: 2px solid #70778C; */
+}
+.timeline>ol>li>ol>li>h4::after{
+    content: "";
+    position: absolute;
+    /* border: 0.5em solid #465173; */
+    transform: translateX(14.4em);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+.timeline>ol>li>ol>li:nth-child(even)>h4::after{
+    content: "";
+    position: absolute;
+    /* border: 0.5em solid #465173; */
+    transform: translateX(-22.1em);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+.timeline>ol>li>ol>li h4{
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.timeline>ol>li>ol>li p{
+    font-size: 0.75em;
+    line-height: 1.5em;
+}
+.timeline>ol>li>ol>li:nth-child(even){
+    margin-left: calc( 100% - 45% - 2 * 0.5em);
+}
